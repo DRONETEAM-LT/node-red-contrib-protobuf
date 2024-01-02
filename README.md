@@ -6,7 +6,7 @@ This project features protobuf encode/decode nodes. Load a proto file, supply a 
 
 ## Ready to Use NPM Package
 [Download here](https://github.com/DRONETEAM-LT/node-red-contrib-protobuf/releases/tag/Release)<br/>
-Run `npm install /path/to/package` to install.
+Run `npm install /path/to/package.tgz` to install.
 
 ## Installation
 
