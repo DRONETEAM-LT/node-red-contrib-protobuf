@@ -58,13 +58,8 @@ ${msg.protobufType}
                     return node.status({fill: 'yellow', shape: 'dot', text: 'Wire format invalid'});
                 }
             }
-            let decodeOptions = {
-                longs: String,
-                enums: String,
-                bytes: String,
-                defaults: false, // includes default values, otherwise not transmitted values will be assigned their default value!
-            };
-            msg.payload = messageType.toObject(message, decodeOptions);
+            
+            msg.payload = messageType.toObject(message);
             node.status({fill: 'green', shape: 'dot', text: 'Processed'});
             node.send(msg);
         });
